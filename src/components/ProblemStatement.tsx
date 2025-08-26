@@ -119,7 +119,7 @@ export default function ProblemStatement() {
                   </div>
                 </div>
                 <h3 className="text-3xl md:text-4xl font-bold text-neural-900 mb-4">
-                  AI investments shouldn't be risky.
+                  AI investments shouldn&apos;t be risky.
                 </h3>
                 <p className="text-xl text-neural-700 font-light leading-relaxed">
                   They should deliver <span className="gradient-text font-semibold">validated, measurable ROI</span>.

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import BookingModal from './BookingModal'
 
 export default function Header() {
@@ -31,9 +32,11 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <img 
+            <Image 
               src="/images/AI_Logo.png" 
               alt="AI Integration Sprint" 
+              width={48}
+              height={48}
               className="h-10 md:h-12 w-auto"
             />
             <h1 className="text-xl md:text-2xl font-bold text-primary-900 ml-3">

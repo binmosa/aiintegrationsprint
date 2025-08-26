@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function About() {
   const credentials = [
     {
@@ -45,9 +47,11 @@ export default function About() {
             <div className="order-2 lg:order-1">
               <div className="relative">
                 <div className="aspect-square bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl flex items-center justify-center p-12 border-2 border-primary-100">
-                  <img 
+                  <Image 
                     src="/images/AI_Logo.png" 
                     alt="AI Integration Sprint Leader" 
+                    width={300}
+                    height={300}
                     className="w-full h-full object-contain"
                   />
                 </div>

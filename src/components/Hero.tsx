@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import BookingModal from './BookingModal'
 
 export default function Hero() {
@@ -129,9 +130,11 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
               <div className="neural-glow">
-                <img 
+                <Image 
                   src="/images/AI_Logo.png" 
                   alt="AI Integration Sprint" 
+                  width={64}
+                  height={64}
                   className="h-16 w-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110"
                 />
               </div>

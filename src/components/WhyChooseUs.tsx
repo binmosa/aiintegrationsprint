@@ -100,7 +100,7 @@ export default function WhyChooseUs() {
           <div className="w-24 h-1 bg-gradient-to-r from-accent-400 to-white rounded-full mx-auto mb-8"></div>
           
           <p className="text-xl md:text-2xl text-blue-100 leading-relaxed font-light max-w-4xl mx-auto">
-            We don't deliver consulting reports — we deliver <span className="font-semibold bg-gradient-to-r from-accent-400 to-white bg-clip-text text-transparent">validated ROI opportunities</span> worth $100K–$5M+
+            We don&apos;t deliver consulting reports — we deliver <span className="font-semibold bg-gradient-to-r from-accent-400 to-white bg-clip-text text-transparent">validated ROI opportunities</span> worth $100K–$5M+
           </p>
         </div>
 
@@ -180,8 +180,8 @@ export default function WhyChooseUs() {
                 we deliver <span className="font-semibold text-accent-200">validated ROI projections</span>.
               </p>
               <p className="font-light">
-                While they talk about <span className="text-red-300 line-through">AI's potential</span>, 
-                we show you <span className="font-semibold text-accent-200">exactly how much money you'll make</span>.
+                While they talk about <span className="text-red-300 line-through">AI&apos;s potential</span>, 
+                we show you <span className="font-semibold text-accent-200">exactly how much money you&apos;ll make</span>.
               </p>
             </div>
           </div>

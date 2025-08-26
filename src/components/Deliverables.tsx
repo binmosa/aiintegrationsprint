@@ -100,7 +100,7 @@ export default function Deliverables() {
           </div>
           
           <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-            <span className="text-neural-900">What You'll Walk Away With</span>
+            <span className="text-neural-900">What You&apos;ll Walk Away With</span>
           </h2>
           <div className="section-divider"></div>
           
@@ -155,7 +155,7 @@ export default function Deliverables() {
                 </div>
                 
                 <p className="text-2xl md:text-3xl font-bold text-neural-900 leading-relaxed mb-6">
-                  You won't just get slides — you'll get validated ROI opportunities worth $100K–$5M+
+                  You won&apos;t just get slides — you&apos;ll get validated ROI opportunities worth $100K–$5M+
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-6 mb-8">

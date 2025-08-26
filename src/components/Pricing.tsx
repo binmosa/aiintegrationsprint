@@ -152,7 +152,7 @@ export default function Pricing() {
 
               {/* What's Included */}
               <div className="mb-12">
-                <h3 className="text-2xl font-bold text-white text-center mb-8">What's included:</h3>
+                <h3 className="text-2xl font-bold text-white text-center mb-8">What&apos;s included:</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   {packageIncludes.map((item, index) => (
                     <div 
