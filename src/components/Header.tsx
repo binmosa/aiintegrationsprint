@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-white/98 backdrop-blur-md shadow-lg border-b border-primary-100/30' : 'bg-transparent'
     }`}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
@@ -95,7 +95,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-white/98 backdrop-blur-md border-t border-primary-100/30 shadow-lg">
             <nav className="flex flex-col py-4">
               <button
                 onClick={() => scrollToSection('about')}
