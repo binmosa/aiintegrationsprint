@@ -9,8 +9,8 @@ export default function ProblemStatement() {
           <path d="M12 2L15.09 8.26L22 9L17 14.14L18.18 21.02L12 17.77" fill="currentColor" opacity="0.3"/>
         </svg>
       ),
-      title: "Too much hype, not enough real business value",
-      description: "Endless promises about AI transformation, but no concrete results for your specific business needs.",
+      title: "Millions wasted on AI projects with no measurable ROI",
+      description: "Companies spend 6-12 months and $500K+ on AI initiatives that never deliver the promised business value.",
       gradient: "from-red-400 to-orange-400"
     },
     {
@@ -22,8 +22,8 @@ export default function ProblemStatement() {
           <circle cx="12" cy="12" r="6" fill="currentColor" opacity="0.3"/>
         </svg>
       ),
-      title: "Expensive consultants who talk, but never deliver",
-      description: "High-priced advisors who provide theoretical frameworks instead of practical, implementable solutions.",
+      title: "High-risk investments without validation",
+      description: "Leadership makes AI decisions based on vendor pitches and industry hype instead of validated business cases.",
       gradient: "from-amber-400 to-yellow-400"
     },
     {
@@ -36,8 +36,8 @@ export default function ProblemStatement() {
           <rect x="4" y="4" width="16" height="16" fill="currentColor" opacity="0.1"/>
         </svg>
       ),
-      title: "Endless reports with no clear next step",
-      description: "Thick documents full of jargon that leave you more confused about what to actually do next.",
+      title: "Analysis paralysis prevents action",
+      description: "Teams get stuck in endless planning cycles while competitors gain market advantage with AI implementations.",
       gradient: "from-blue-400 to-indigo-400"
     },
     {
@@ -50,8 +50,8 @@ export default function ProblemStatement() {
           <circle cx="12" cy="12" r="4" fill="currentColor" opacity="0.2"/>
         </svg>
       ),
-      title: "Confusion about where to even start",
-      description: "So many AI tools and options that choosing the right approach feels overwhelming and risky.",
+      title: "No framework to prioritize opportunities",
+      description: "Without systematic evaluation, businesses pursue the loudest AI opportunity instead of the most profitable one.",
       gradient: "from-purple-400 to-pink-400"
     }
   ]
@@ -69,14 +69,14 @@ export default function ProblemStatement() {
           </div>
           
           <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-            <span className="text-neural-900">Why Most Businesses </span>
-            <span className="gradient-text">Struggle with AI</span>
+            <span className="text-neural-900">Why </span>
+            <span className="gradient-text">AI Investments Fail</span>
           </h2>
           <div className="section-divider"></div>
           
           <p className="text-xl md:text-2xl text-neural-600 leading-relaxed font-light max-w-4xl mx-auto">
-            AI is everywhere in the news — but when small and mid-sized businesses try to use it, 
-            they run into the same problems:
+            87% of AI projects fail to deliver measurable ROI. Without a proven framework, 
+            businesses waste time and money on the wrong opportunities:
           </p>
         </div>
 
@@ -119,10 +119,10 @@ export default function ProblemStatement() {
                   </div>
                 </div>
                 <h3 className="text-3xl md:text-4xl font-bold text-neural-900 mb-4">
-                  AI shouldn't be confusing.
+                  AI investments shouldn't be risky.
                 </h3>
                 <p className="text-xl text-neural-700 font-light leading-relaxed">
-                  It should simply help your business <span className="gradient-text font-semibold">run better</span>.
+                  They should deliver <span className="gradient-text font-semibold">validated, measurable ROI</span>.
                 </p>
               </div>
             </div>

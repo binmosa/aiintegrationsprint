@@ -2,6 +2,8 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import ProblemStatement from '@/components/ProblemStatement'
 import Solution from '@/components/Solution'
+import Pricing from '@/components/Pricing'
+import FAQ from '@/components/FAQ'
 import ProcessTimeline from '@/components/ProcessTimeline'
 import Deliverables from '@/components/Deliverables'
 import WhyChooseUs from '@/components/WhyChooseUs'
@@ -16,6 +18,8 @@ export default function Home() {
       <Hero />
       <ProblemStatement />
       <Solution />
+      <Pricing />
+      <FAQ />
       <ProcessTimeline />
       <Deliverables />
       <WhyChooseUs />

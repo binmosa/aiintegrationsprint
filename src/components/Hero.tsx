@@ -85,24 +85,24 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-500/10 to-secondary-500/10 backdrop-blur-sm border border-primary-200/30 rounded-full mb-8 animate-slide-up">
             <div className="w-2 h-2 bg-accent-500 rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-primary-700">AI-Powered Business Transformation</span>
+            <span className="text-sm font-medium text-primary-700">Proven ROI Framework • Risk-Free Validation</span>
           </div>
           
           <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-[1.1] animate-slide-up text-shadow">
-            <span className="text-neural-900">Bring the Power of </span>
-            <span className="gradient-text">AI</span>
-            <span className="text-neural-900"> to Your Business in Just </span>
+            <span className="text-neural-900">Identify </span>
+            <span className="gradient-text">$100K–$5M</span>
+            <span className="text-neural-900"> in Validated </span>
             <span className="relative inline-block">
-              <span className="gradient-text">4 Weeks</span>
+              <span className="gradient-text">AI ROI</span>
               <div className="absolute -bottom-4 left-0 right-0 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full transform scale-x-0 animate-[scale-x-100] origin-left" style={{animationDelay: '1s', animationDuration: '0.8s', animationFillMode: 'forwards'}}></div>
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-neural-600 mb-10 leading-relaxed max-w-4xl mx-auto animate-fade-in font-light" style={{animationDelay: '0.5s'}}>
-            AI doesn&apos;t have to be complicated or expensive. Our{' '}
-            <span className="font-semibold gradient-text">AI Integration Sprint</span> is a premium consulting program 
-            that helps SMEs and traditional businesses uncover real opportunities, test them quickly, 
-            and walk away with a clear plan.
+            A proven framework to <span className="font-semibold gradient-text">de-risk AI investments</span> and identify 
+            validated ROI opportunities in under a month. Our{' '}
+            <span className="font-semibold gradient-text">AI Integration Sprint</span> delivers measurable business impact, 
+            not theoretical recommendations.
           </p>
 
           {/* CTA Section */}
@@ -125,7 +125,7 @@ export default function Hero() {
           {/* Trust Indicators */}
           <div className="animate-fade-in" style={{animationDelay: '1.2s'}}>
             <p className="text-sm text-neural-500 uppercase tracking-wide font-semibold mb-6">
-              Powered by Advanced AI Expertise
+              $50M+ in Validated ROI Opportunities Identified
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
               <div className="neural-glow">
@@ -151,7 +151,7 @@ export default function Hero() {
                 <div className="w-8 h-8 bg-gradient-to-br from-secondary-400 to-accent-400 rounded-full border-2 border-white"></div>
                 <div className="w-8 h-8 bg-gradient-to-br from-accent-400 to-primary-400 rounded-full border-2 border-white"></div>
               </div>
-              <span className="text-sm font-medium text-neural-700">Join 100+ businesses already transforming with AI</span>
+              <span className="text-sm font-medium text-neural-700">Join 100+ businesses that have validated $100K–$5M in AI opportunities</span>
             </div>
           </div>
         </div>
