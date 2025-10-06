@@ -13,12 +13,12 @@ export default function ValueLadder() {
       subtitle: "Opportunity Assessment",
       value: "$0",
       duration: "30 minutes",
-      description: "Discover if AI can transform your business operations",
+      description: "You'll walk away with 3-5 specific AI opportunity ideas tailored to your business, plus clarity on whether AI is worth pursuing now",
       features: [
-        "Business process analysis",
-        "Initial AI opportunity identification",
-        "ROI potential discussion",
-        "Sprint eligibility assessment"
+        "Get 3-5 specific AI ideas for your business",
+        "Understand where you could save time & money",
+        "Learn if your data is ready (or what to fix)",
+        "No obligation — honest assessment of fit"
       ],
       cta: "Book Free Call",
       highlight: false,
@@ -31,13 +31,13 @@ export default function ValueLadder() {
       title: "AI Integration Sprint",
       subtitle: "ROI Validation Package",
       value: "$9,500",
-      duration: "4 weeks",
-      description: "Validate $100K–$5M in AI opportunities before major investment",
+      duration: "6 weeks",
+      description: "Validate AI opportunities for your business before committing to major implementation — get proof, not promises",
       features: [
-        "Systematic ROI opportunity discovery",
-        "Financial impact quantification ($100K–$5M range)",
-        "Working prototype with your data",
-        "Validated ROI projections & risk assessment",
+        "Systematic discovery of AI opportunities in your workflows",
+        "Financial impact analysis tailored to your business size",
+        "Working prototype built with your actual data",
+        "Conservative & optimistic ROI projections",
         "12-month implementation roadmap",
         "Direct access to AI PhD & CTO"
       ],
@@ -70,31 +70,61 @@ export default function ValueLadder() {
   ]
 
   return (
-    <section id="pricing" className="section-padding bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 relative overflow-hidden">
+    <section id="pricing" className="py-32 bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-neural-pattern opacity-10"></div>
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-20 w-80 h-80 bg-gradient-to-br from-primary-400/15 to-secondary-400/15 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-br from-accent-400/10 to-primary-400/10 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-      </div>
 
       <div className="container-custom relative z-10">
         {/* Header */}
-        <div className="max-w-5xl mx-auto text-center mb-20">
+        <div className="max-w-5xl mx-auto text-center mb-24">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-500/10 to-secondary-500/10 backdrop-blur-sm border border-primary-200/30 rounded-full mb-8">
             <div className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-bold text-primary-700">Your Path to AI Success</span>
           </div>
 
-          <h2 className="font-display text-5xl md:text-7xl font-bold mb-8 leading-tight">
+          <h2 className="font-display text-5xl md:text-7xl font-bold mb-12 leading-tight">
             <span className="text-neural-900">Start Risk-Free. </span>
             <span className="gradient-text">Scale With Confidence.</span>
           </h2>
-          <div className="section-divider"></div>
 
-          <p className="text-xl md:text-2xl text-neural-600 leading-relaxed font-light max-w-4xl mx-auto">
-            Our proven framework takes you from <span className="gradient-text-accent">free discovery to validated ROI</span> to full implementation — at your pace
-          </p>
+          {/* Value Anchoring */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-gradient-to-r from-accent-50 to-primary-50 border-2 border-accent-200 rounded-xl p-8">
+              <div className="text-center mb-6">
+                <p className="text-sm font-bold text-accent-700 uppercase tracking-wide mb-2">Typical Return on Investment</p>
+                <p className="text-4xl md:text-5xl font-bold text-neutral-900 mb-3">
+                  10×–50× ROI Multiple
+                </p>
+                <p className="text-lg text-neutral-600">
+                  Most clients uncover opportunities worth 10×–50× the Sprint investment
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6 text-center">
+                <div className="bg-white/60 rounded-lg p-4">
+                  <p className="text-2xl font-bold text-primary-600 mb-1">$1,583</p>
+                  <p className="text-sm text-neutral-600">per week over 6 weeks</p>
+                </div>
+                <div className="bg-white/60 rounded-lg p-4">
+                  <p className="text-2xl font-bold text-primary-600 mb-1">&lt; 1 Month</p>
+                  <p className="text-sm text-neutral-600">cost of 1 data scientist</p>
+                </div>
+                <div className="bg-white/60 rounded-lg p-4">
+                  <p className="text-2xl font-bold text-primary-600 mb-1">Limited</p>
+                  <p className="text-sm text-neutral-600">Only 8 sprints per quarter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Cost of Inaction */}
+          <div className="max-w-3xl mx-auto mb-16 p-6 bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-xl">
+            <p className="text-lg font-bold text-neutral-900 mb-2">
+              What does AI uncertainty cost you each month?
+            </p>
+            <p className="text-neutral-700">
+              Every month without clarity could mean missed cost savings, lost revenue opportunities, or competitive disadvantage. The Sprint is the smallest safe way to explore AI — without burning $50K–$250K on failed projects.
+            </p>
+          </div>
         </div>
 
         {/* Value Ladder Visualization */}
@@ -158,9 +188,14 @@ export default function ValueLadder() {
                           <span className="text-neural-600 text-sm">one-time</span>
                         )}
                       </div>
-                      <p className="text-sm text-neural-600 font-semibold">
+                      <p className="text-sm text-neutral-600 font-semibold mb-1">
                         {step.duration}
                       </p>
+                      {step.highlight && (
+                        <p className="text-xs text-primary-600 font-medium">
+                          ~$1,583/week • 2 payment installments available
+                        </p>
+                      )}
                     </div>
 
                     {/* Description */}
@@ -253,9 +288,14 @@ export default function ValueLadder() {
                           <span className="text-neural-600 text-sm">one-time</span>
                         )}
                       </div>
-                      <p className="text-sm text-neural-600 font-semibold">
+                      <p className="text-sm text-neutral-600 font-semibold mb-1">
                         {step.duration}
                       </p>
+                      {step.highlight && (
+                        <p className="text-xs text-primary-600 font-medium">
+                          ~$1,583/week • 2 payment installments available
+                        </p>
+                      )}
                     </div>
 
                     <p className="text-neural-700 leading-relaxed mb-6">
@@ -304,6 +344,41 @@ export default function ValueLadder() {
                 )}
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Why This Pricing Model */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="bg-white border border-neutral-200 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-neutral-900 mb-6 text-center">
+              Why a Sprint vs. Traditional Consulting?
+            </h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <h4 className="font-bold text-primary-600 mb-3">⚡ Speed</h4>
+                <p className="text-neutral-700 text-sm leading-relaxed">
+                  In just <strong>6 weeks</strong>, your leadership team has clarity on AI ROI. No drawn-out six-figure consulting contracts that take months.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h4 className="font-bold text-primary-600 mb-3">🎯 Focused Scope</h4>
+                <p className="text-neutral-700 text-sm leading-relaxed">
+                  This is a <strong>pilot engagement</strong> designed to validate opportunities before major investment. It naturally leads to bigger implementation projects where real enterprise spend happens.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h4 className="font-bold text-primary-600 mb-3">💎 Limited Availability</h4>
+                <p className="text-neutral-700 text-sm leading-relaxed">
+                  Only <strong>8 sprints per quarter</strong> to ensure quality and personalized attention. This isn&apos;t a mass-market service.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h4 className="font-bold text-primary-600 mb-3">💰 Risk-Adjusted</h4>
+                <p className="text-neutral-700 text-sm leading-relaxed">
+                  <strong>10×–50× ROI typical</strong> means the Sprint pays for itself many times over. Compare that to $50K–$250K wasted on failed AI projects.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -62,7 +62,7 @@ export default function FinalCTA() {
                 Don&apos;t waste months researching AI solutions that may not work. 
               </p>
               <p className="text-xl md:text-2xl leading-relaxed font-light">
-                In just <span className="font-bold text-accent-300">4 weeks</span>, you&apos;ll have <span className="font-bold text-accent-300">validated ROI projections</span>, a <span className="font-bold text-accent-300">working prototype</span>, and a <span className="font-bold text-accent-300">risk-assessed roadmap</span> designed specifically for your business.
+                In just <span className="font-bold text-accent-300">6 weeks</span>, you&apos;ll have <span className="font-bold text-accent-300">validated ROI projections</span>, a <span className="font-bold text-accent-300">working prototype</span>, and a <span className="font-bold text-accent-300">risk-assessed roadmap</span> designed specifically for your business.
               </p>
             </div>
 
@@ -81,7 +81,7 @@ export default function FinalCTA() {
               <div className="bg-gradient-to-br from-accent-500/20 to-primary-500/20 border border-accent-400/30 rounded-2xl p-6">
                 <div className="text-accent-300 text-lg font-bold mb-3">✅ AI Integration Sprint</div>
                 <div className="text-accent-200 space-y-2 text-left">
-                  <p>• 4 weeks to validation</p>
+                  <p>• 6 weeks to validation</p>
                   <p>• $9,500 de-risking investment</p>
                   <p>• Validated $100K–$5M opportunities</p>
                   <p>• Working prototypes & ROI proof</p>

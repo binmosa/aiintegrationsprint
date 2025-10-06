@@ -8,6 +8,7 @@ export default function ProcessTimeline() {
   const weeks = [
     {
       week: 1,
+      weekLabel: "Week 1",
       title: "ROI Opportunity Discovery",
       description: "We systematically identify and quantify your highest-value AI opportunities",
       icon: (
@@ -20,13 +21,14 @@ export default function ProcessTimeline() {
       gradient: "from-primary-500 to-secondary-500",
       details: [
         "Financial impact analysis of current process inefficiencies",
-        "Quantification of time and cost savings potential", 
+        "Quantification of time and cost savings potential",
         "Revenue enhancement opportunity identification",
         "Risk assessment and feasibility scoring for each opportunity"
       ]
     },
     {
       week: 2,
+      weekLabel: "Weeks 2-3",
       title: "ROI Validation & Prioritization",
       description: "We validate and rank your top 2-3 opportunities by financial impact and implementation feasibility",
       icon: (
@@ -42,11 +44,14 @@ export default function ProcessTimeline() {
         "Detailed ROI calculations with conservative and optimistic projections",
         "Implementation cost estimates and resource requirements",
         "Risk-adjusted payback period analysis for each opportunity",
-        "Market validation and competitive advantage assessment"
+        "Market validation and competitive advantage assessment",
+        "Deep-dive stakeholder workshops and alignment sessions",
+        "Technical feasibility assessment and data readiness evaluation"
       ]
     },
     {
       week: 3,
+      weekLabel: "Weeks 4-5",
       title: "ROI Proof-of-Concept",
       description: "We build a working prototype that demonstrates and validates the projected business impact",
       icon: (
@@ -60,11 +65,14 @@ export default function ProcessTimeline() {
         "Functional prototype demonstrating measurable business impact",
         "Real-world testing with your actual data and workflows",
         "Quantified performance metrics and ROI validation",
-        "Scalability assessment and implementation roadmap refinement"
+        "Scalability assessment and implementation roadmap refinement",
+        "Iterative improvements based on stakeholder feedback",
+        "User acceptance testing and refinement"
       ]
     },
     {
       week: 4,
+      weekLabel: "Week 6",
       title: "ROI-Focused Implementation Plan",
       description: "We deliver a detailed roadmap with projected returns, investment requirements, and success milestones",
       icon: (
@@ -87,32 +95,31 @@ export default function ProcessTimeline() {
   ]
 
   return (
-    <section id="process" className="section-padding bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 relative overflow-hidden">
+    <section id="process" className="py-32 bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 relative overflow-hidden">
       {/* Background Neural Network Pattern */}
       <div className="absolute inset-0 bg-neural-pattern opacity-20"></div>
-      
-      {/* Floating Gradient Orbs */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-32 right-20 w-72 h-72 bg-gradient-to-br from-primary-400/15 to-secondary-400/15 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-32 left-20 w-80 h-80 bg-gradient-to-br from-accent-400/15 to-primary-400/15 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
-      </div>
 
       <div className="container-custom relative z-10">
-        <div className="max-w-5xl mx-auto text-center mb-20">
+        <div className="max-w-5xl mx-auto text-center mb-24">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-500/10 to-secondary-500/10 backdrop-blur-sm border border-primary-200/30 rounded-full mb-8">
             <div className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-primary-700">Our Proven Process</span>
           </div>
-          
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
+
+          <h2 className="text-5xl md:text-6xl font-bold mb-12 leading-tight">
             <span className="text-neural-900">Our </span>
-            <span className="gradient-text">4-Week Process</span>
+            <span className="gradient-text">6-Week Process</span>
           </h2>
-          <div className="section-divider"></div>
-          
-          <p className="text-xl md:text-2xl text-neural-600 leading-relaxed font-light max-w-4xl mx-auto">
-            A systematic approach to <span className="font-semibold gradient-text">validate and de-risk</span> AI investments before you commit significant resources
-          </p>
+
+          {/* Call-out box */}
+          <div className="max-w-3xl mx-auto mb-16 p-8 bg-gradient-to-r from-primary-50 to-secondary-50 border-l-4 border-primary-500 rounded-r-xl">
+            <p className="text-2xl md:text-3xl font-bold text-neutral-900 mb-2">
+              Systematic validation, zero guesswork
+            </p>
+            <p className="text-lg text-neutral-600">
+              A proven approach to validate and de-risk AI investments before you commit significant resources
+            </p>
+          </div>
         </div>
 
         {/* Desktop Timeline */}
@@ -141,12 +148,12 @@ export default function ProcessTimeline() {
                       : 'bg-white/80 backdrop-blur-sm border-2 border-primary-200/50 text-neural-500 hover:border-primary-300 hover:shadow-neural'
                   }`}>
                     {week.icon}
-                    <div className={`absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 ${
+                    <div className={`absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 whitespace-nowrap ${
                       activeWeek >= week.week
                         ? 'bg-gradient-to-r from-primary-600 to-secondary-600 text-white shadow-glow'
                         : 'bg-neural-100 text-neural-600 border border-neural-200'
                     }`}>
-                      Week {week.week}
+                      {week.weekLabel}
                     </div>
                     
                     {/* Active indicator ring */}
@@ -188,7 +195,7 @@ export default function ProcessTimeline() {
                     <h3 className="text-3xl font-bold text-neural-900 mb-1">
                       {weeks[activeWeek - 1].title}
                     </h3>
-                    <p className="text-primary-600 font-medium">Week {activeWeek} Details</p>
+                    <p className="text-primary-600 font-medium">{weeks[activeWeek - 1].weekLabel} Details</p>
                   </div>
                 </div>
                 
@@ -230,8 +237,8 @@ export default function ProcessTimeline() {
                   <div className="flex-shrink-0">
                     <div className={`w-20 h-20 bg-gradient-to-br ${week.gradient} rounded-full flex items-center justify-center text-white shadow-glow relative`}>
                       {week.icon}
-                      <div className="absolute -top-3 -right-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-neural">
-                        Week {week.week}
+                      <div className="absolute -top-3 -right-3 bg-gradient-to-r from-primary-600 to-secondary-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-neural whitespace-nowrap">
+                        {week.weekLabel}
                       </div>
                     </div>
                   </div>

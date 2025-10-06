@@ -14,8 +14,8 @@ export default function Solution() {
           <circle cx="11" cy="11" r="3" fill="currentColor" opacity="0.3"/>
         </svg>
       ),
-      title: "Quantify $100K–$5M in validated ROI opportunities",
-      description: "We analyze your business processes and identify specific AI opportunities with measurable financial impact and implementation roadmaps.",
+      title: "Discover where AI can save you time and money",
+      description: "We analyze your specific business processes and identify AI opportunities with measurable financial impact — tailored to your company size and industry.",
       gradient: "from-primary-400 to-secondary-400"
     },
     {
@@ -25,8 +25,8 @@ export default function Solution() {
           <rect x="2" y="2" width="20" height="20" rx="2" fill="currentColor" opacity="0.1"/>
         </svg>
       ),
-      title: "Validate ROI with a working prototype using your data",
-      description: "We build a functional proof-of-concept that demonstrates measurable business impact before you invest in full implementation.",
+      title: "See it work with your actual data",
+      description: "You&apos;ll get a functional proof-of-concept built with your data — so you can see the impact before committing to full implementation.",
       gradient: "from-secondary-400 to-accent-400"
     },
     {
@@ -39,8 +39,8 @@ export default function Solution() {
           <rect x="4" y="4" width="16" height="16" fill="currentColor" opacity="0.1"/>
         </svg>
       ),
-      title: "Receive a prioritized roadmap with ROI projections",
-      description: "Get a detailed 12-month implementation plan with projected ROI, resource requirements, and risk mitigation strategies for each opportunity.",
+      title: "Get a clear roadmap for your next steps",
+      description: "You&apos;ll receive a prioritized implementation plan with projected returns, resource needs, and realistic timelines specific to your business.",
       gradient: "from-accent-400 to-primary-400"
     }
   ]
@@ -50,54 +50,36 @@ export default function Solution() {
   }
 
   return (
-    <section className="section-padding bg-gradient-to-br from-white via-primary-50/30 to-secondary-50/30 relative overflow-hidden">
+    <section className="py-32 bg-gradient-to-br from-white via-primary-50/30 to-secondary-50/30 relative overflow-hidden">
       {/* Background Neural Network Pattern */}
       <div className="absolute inset-0 bg-neural-pattern opacity-20"></div>
-      
-      {/* Floating Gradient Orbs */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-primary-400/20 to-secondary-400/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-br from-secondary-400/20 to-accent-400/20 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-gradient-to-br from-accent-400/15 to-primary-400/15 rounded-full blur-2xl animate-float" style={{animationDelay: '2s'}}></div>
-      </div>
-
-      {/* Neural Network SVG Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <svg className="w-full h-full" viewBox="0 0 1000 1000">
-          <defs>
-            <linearGradient id="solution-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#08aee0" />
-              <stop offset="50%" stopColor="#22c9f4" />
-              <stop offset="100%" stopColor="#22c55e" />
-            </linearGradient>
-          </defs>
-          <path d="M200,200 Q400,150 600,300 T900,250" stroke="url(#solution-gradient)" strokeWidth="2" fill="none" className="animate-pulse" />
-          <path d="M100,500 Q350,400 600,550 T950,500" stroke="url(#solution-gradient)" strokeWidth="1.5" fill="none" className="animate-pulse" style={{animationDelay: '1s'}} />
-          <circle cx="400" cy="200" r="4" fill="#08aee0" className="animate-pulse opacity-70" />
-          <circle cx="600" cy="300" r="5" fill="#22c9f4" className="animate-pulse opacity-80" style={{animationDelay: '0.5s'}} />
-          <circle cx="800" cy="250" r="3" fill="#22c55e" className="animate-pulse opacity-60" style={{animationDelay: '1s'}} />
-        </svg>
-      </div>
 
       <div className="container-custom relative z-10">
-        <div className="max-w-5xl mx-auto text-center mb-20">
+        <div className="max-w-5xl mx-auto text-center mb-24">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent-500/10 to-primary-500/10 backdrop-blur-sm border border-accent-200/30 rounded-full mb-8">
             <div className="w-2 h-2 bg-accent-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-accent-700">The Solution</span>
           </div>
-          
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
+
+          <h2 className="text-5xl md:text-6xl font-bold mb-12 leading-tight">
             <span className="text-neural-900">Our Proven </span>
             <span className="gradient-text">ROI Framework</span>
           </h2>
-          <div className="section-divider"></div>
-          
-          <p className="text-xl md:text-2xl text-neural-600 leading-relaxed font-light max-w-4xl mx-auto">
-            In just <span className="font-semibold gradient-text">4 weeks</span>, we systematically de-risk your AI investment by:
-          </p>
+
+          {/* Call-out box with timeframe */}
+          <div className="max-w-3xl mx-auto mb-16 p-8 bg-gradient-to-r from-accent-50 to-primary-50 border-l-4 border-accent-500 rounded-r-xl">
+            <p className="text-2xl md:text-3xl font-bold text-neutral-900 mb-2">
+              6 weeks to validated ROI
+            </p>
+            <p className="text-lg text-neutral-600">
+              We systematically de-risk your AI investment with measurable results
+            </p>
+          </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-20">
+        {/* Benefits Breakdown */}
+        <h3 className="text-2xl font-bold text-neutral-900 mb-12 text-center">Three Core Deliverables</h3>
+        <div className="grid lg:grid-cols-3 gap-10 mb-24">
           {benefits.map((benefit, index) => (
             <div 
               key={index}
@@ -121,28 +103,31 @@ export default function Solution() {
           ))}
         </div>
 
-        <div className="text-center">
-          <div className="relative max-w-4xl mx-auto mb-12">
-            <div className="neural-glow">
-              <div className="card-neural p-12">
-                <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-primary-500 rounded-full flex items-center justify-center shadow-glow">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
+        {/* Call-out box with value proposition */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="bg-white border-2 border-primary-200 rounded-2xl p-10 shadow-lg">
+            <div className="flex items-start gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-primary-500 rounded-full flex items-center justify-center">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                 </div>
-                <p className="text-2xl md:text-3xl font-bold text-neural-900 leading-relaxed mb-4">
+              </div>
+              <div className="flex-1">
+                <p className="text-2xl md:text-3xl font-bold text-neutral-900 mb-3">
                   No risky investments. No theoretical frameworks.
                 </p>
-                <p className="text-xl text-neural-700 font-light">
-                  Just <span className="gradient-text font-semibold">validated ROI opportunities and proven results</span>.
+                <p className="text-xl text-neutral-600">
+                  Just validated ROI opportunities and proven results.
                 </p>
               </div>
             </div>
           </div>
-          
-          <button 
+        </div>
+
+        <div className="text-center">
+          <button
             onClick={handleBookConsultation}
             className="btn-primary text-lg px-12 py-6 relative group"
           >

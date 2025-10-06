@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
   html {
@@ -12,137 +12,70 @@
   }
 
   body {
-    font-family: 'Inter', system-ui, sans-serif;
-    background: linear-gradient(135deg, #f0fdff 0%, #ffffff 50%, #f0f9ff 100%);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #ffffff;
   }
 
   * {
-    @apply border-neural-200;
+    @apply border-neutral-200;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sora', 'Inter', system-ui, sans-serif;
-    letter-spacing: -0.02em;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.025em;
+    font-weight: 700;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply relative overflow-hidden bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 hover:from-primary-700 hover:to-secondary-600 text-white font-bold py-5 px-10 rounded-2xl transition-all duration-500 shadow-glow hover:shadow-glow-lg transform hover:scale-[1.02] hover:-translate-y-0.5;
-  }
-
-  .btn-primary::before {
-    content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] transition-transform duration-700 ease-out;
-  }
-
-  .btn-primary:hover::before {
-    @apply translate-x-[100%];
-  }
-
-  .btn-primary::after {
-    content: '';
-    @apply absolute inset-0 rounded-2xl bg-gradient-to-r from-primary-400/50 to-secondary-400/50 blur-xl opacity-0 transition-opacity duration-500 -z-10;
-  }
-
-  .btn-primary:hover::after {
-    @apply opacity-100;
+    @apply bg-neutral-900 hover:bg-neutral-800 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md;
   }
 
   .btn-secondary {
-    @apply relative overflow-hidden border-2 border-primary-500/40 bg-white/80 backdrop-blur-sm text-primary-700 hover:bg-primary-600 hover:border-primary-600 hover:text-white font-bold py-5 px-10 rounded-2xl transition-all duration-500 shadow-neural hover:shadow-glow transform hover:scale-[1.02];
+    @apply border border-neutral-300 bg-white hover:bg-neutral-50 text-neutral-900 font-semibold py-4 px-8 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md;
   }
 
   .btn-ghost {
-    @apply text-primary-600 hover:text-primary-700 font-semibold py-3 px-6 rounded-xl transition-all duration-300 hover:bg-primary-50/70;
+    @apply text-neutral-600 hover:text-neutral-900 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
   }
 
   .card-premium {
-    @apply bg-white/85 backdrop-blur-xl border border-primary-100/60 rounded-3xl shadow-premium hover:shadow-glow-lg transition-all duration-500 p-10 hover:border-primary-200/80;
+    @apply bg-white border border-neutral-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 p-8;
   }
 
   .card-neural {
-    @apply bg-gradient-to-br from-white/95 to-primary-50/60 backdrop-blur-xl border border-primary-200/40 rounded-2xl shadow-neural hover:shadow-premium transition-all duration-500;
+    @apply bg-white border border-neutral-200 rounded-xl shadow-sm transition-all duration-200;
   }
 
   .section-padding {
-    @apply py-24 lg:py-32;
+    @apply py-16 lg:py-24;
   }
 
   .container-custom {
-    @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
+    @apply max-w-6xl mx-auto px-6 sm:px-8 lg:px-10;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 bg-clip-text text-transparent font-bold;
+    @apply text-neutral-900 font-bold;
   }
 
   .gradient-text-accent {
-    @apply bg-gradient-to-r from-accent-500 via-primary-500 to-secondary-500 bg-clip-text text-transparent font-bold;
-  }
-
-  .gradient-border {
-    @apply border-2 border-transparent bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-border;
-  }
-
-  .neural-glow {
-    @apply relative;
-  }
-
-  .neural-glow::before {
-    content: '';
-    @apply absolute -inset-2 bg-gradient-to-r from-primary-500/20 via-secondary-500/20 to-accent-500/20 rounded-3xl opacity-60 blur-2xl transition-opacity duration-500;
-  }
-
-  .neural-glow:hover::before {
-    @apply opacity-100 blur-3xl;
-  }
-
-  .floating-element {
-    @apply animate-float;
-  }
-
-  .glass-morphism {
-    @apply bg-white/15 backdrop-blur-xl border border-white/30 shadow-2xl;
-  }
-
-  .premium-gradient {
-    @apply bg-gradient-to-br from-primary-600 via-primary-500 to-secondary-600;
-  }
-
-  .text-shadow {
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  }
-
-  .text-shadow-lg {
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    @apply text-neutral-900 font-bold;
   }
 
   .section-divider {
-    @apply w-32 h-1.5 bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 rounded-full mx-auto mb-10 shadow-glow;
+    @apply w-16 h-0.5 bg-neutral-900 mx-auto mb-8;
   }
 
   .stat-card {
-    @apply relative overflow-hidden bg-white/90 backdrop-blur-lg border border-primary-100/50 rounded-2xl p-8 shadow-premium hover:shadow-glow-lg transition-all duration-500;
-  }
-
-  .stat-card::before {
-    content: '';
-    @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-accent-500 transform scale-x-0 transition-transform duration-500 origin-left;
-  }
-
-  .stat-card:hover::before {
-    @apply scale-x-100;
+    @apply bg-white border border-neutral-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-200;
   }
 }
 
 @layer utilities {
-  .bg-neural-pattern {
-    background-image: linear-gradient(45deg, rgba(8, 174, 224, 0.05) 25%, transparent 25%), 
-                      linear-gradient(-45deg, rgba(8, 174, 224, 0.05) 25%, transparent 25%), 
-                      linear-gradient(45deg, transparent 75%, rgba(8, 174, 224, 0.05) 75%), 
-                      linear-gradient(-45deg, transparent 75%, rgba(8, 174, 224, 0.05) 75%);
-    background-size: 20px 20px;
-    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  .bg-dots {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
 }

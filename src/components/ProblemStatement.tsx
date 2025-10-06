@@ -59,30 +59,36 @@ export default function ProblemStatement() {
   ]
 
   return (
-    <section className="section-padding bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 relative">
+    <section className="py-32 bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 relative">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-neural-pattern opacity-20"></div>
-      
+
       <div className="container-custom relative z-10">
-        <div className="max-w-5xl mx-auto text-center mb-20">
+        <div className="max-w-5xl mx-auto text-center mb-24">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-red-500/10 to-orange-500/10 backdrop-blur-sm border border-red-200/30 rounded-full mb-8">
             <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-red-700">Common AI Implementation Challenges</span>
           </div>
-          
-          <h2 className="font-display text-5xl md:text-7xl font-bold mb-8 leading-tight">
+
+          <h2 className="font-display text-5xl md:text-7xl font-bold mb-12 leading-tight">
             <span className="text-neural-900">Why </span>
             <span className="gradient-text">AI Investments Fail</span>
           </h2>
-          <div className="section-divider"></div>
 
-          <p className="text-xl md:text-2xl text-neural-600 leading-relaxed font-light max-w-4xl mx-auto">
-            <span className="font-bold gradient-text-accent">87% of AI projects fail</span> to deliver measurable ROI. Without a proven framework,
-            businesses waste time and money on the wrong opportunities:
-          </p>
+          {/* Call-out box with key stat */}
+          <div className="max-w-3xl mx-auto mb-12 p-8 bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-xl">
+            <p className="text-2xl md:text-3xl font-bold text-neutral-900 mb-2">
+              When you&apos;re investing in AI, you want to avoid wasted time and money
+            </p>
+            <p className="text-lg text-neutral-600">
+              Most AI projects fail because companies jump into implementation without validating the business case first
+            </p>
+          </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-20">
+        {/* Pain Points Grid */}
+        <h3 className="text-2xl font-bold text-neutral-900 mb-8 text-center">The Four Critical Failure Points</h3>
+        <div className="grid lg:grid-cols-2 gap-8 mb-24">
           {painPoints.map((point, index) => (
             <div 
               key={index}

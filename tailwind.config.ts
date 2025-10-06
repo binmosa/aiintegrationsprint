@@ -74,33 +74,20 @@ const config: Config = {
         body: ['Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        '3xl': '0 35px 60px -12px rgba(0, 0, 0, 0.25)',
-        'glow': '0 0 25px -5px rgba(8, 174, 224, 0.6), 0 0 15px -5px rgba(34, 201, 244, 0.4)',
-        'glow-lg': '0 0 50px -10px rgba(8, 174, 224, 0.7), 0 0 30px -10px rgba(34, 201, 244, 0.5)',
-        'neural': '0 8px 30px -5px rgba(8, 174, 224, 0.35), 0 0 0 1px rgba(8, 174, 224, 0.08)',
-        'premium': '0 30px 60px -15px rgba(8, 174, 224, 0.3), 0 10px 30px -10px rgba(34, 201, 244, 0.2), 0 0 0 1px rgba(8, 174, 224, 0.08)',
-        'luxury': '0 40px 80px -20px rgba(8, 174, 224, 0.35), 0 20px 40px -15px rgba(34, 201, 244, 0.25), 0 0 0 1px rgba(8, 174, 224, 0.1)',
+        'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+        'DEFAULT': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+        'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
       },
       animation: {
-        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'bounce': 'bounce 1s infinite',
-        'float': 'float 3s ease-in-out infinite',
-        'glow': 'glow 2s ease-in-out infinite alternate',
-        'slide-up': 'slideUp 0.5s ease-out',
-        'fade-in': 'fadeIn 0.5s ease-out',
+        'fade-in': 'fadeIn 0.3s ease-out',
+        'slide-up': 'slideUp 0.3s ease-out',
       },
       keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
-        },
-        glow: {
-          '0%': { boxShadow: '0 0 20px -5px rgba(8, 174, 224, 0.5)' },
-          '100%': { boxShadow: '0 0 30px -5px rgba(8, 174, 224, 0.8)' },
-        },
         slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0px)', opacity: '1' },
+          '0%': { transform: 'translateY(10px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         fadeIn: {
           '0%': { opacity: '0' },

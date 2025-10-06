@@ -8,51 +8,23 @@ export default function FAQ() {
   const faqs = [
     {
       question: "What exactly is the AI Integration Sprint?",
-      answer: "It's a 4-week remote consulting program where we: Assess your company's AI readiness, identify and prioritize the best AI opportunities for ROI, build a working prototype (proof-of-concept) using your data, and deliver a 12-month executive roadmap for implementation. By the end, you'll have clarity, a prototype you can show, and a plan you can act on."
-    },
-    {
-      question: "Who is this for?",
-      answer: "The Sprint is designed for small and mid-size companies in the US and Singapore who want to explore AI but don't know where to start, are tired of 'AI hype' and want real outcomes (not endless workshops), and need a tangible prototype and roadmap to guide investment decisions. Typical participants: CEOs, COOs, CTOs, innovation leaders, and functional heads (sales, ops, customer support)."
-    },
-    {
-      question: "Why only 4 weeks?",
-      answer: "Because speed matters. Many companies waste months in brainstorming and strategy decks with no real proof. In just 4 weeks, you'll go from 'AI sounds interesting' to 'Here's a prototype, ROI analysis, and a clear plan.'"
-    },
-    {
-      question: "What deliverables will I receive?",
-      answer: "At the end of the Sprint, you'll get: AI Readiness Report (PDF), ROI Opportunity Matrix (Excel), Executive Roadmap Deck (PowerPoint/Slides), Working Prototype Demo (Web/App/Video), and consulting sessions directly with Dr. [Your Name]."
-    },
-    {
-      question: "What if my company doesn't have good data?",
-      answer: "That's common! Part of Week 1 is a data readiness check. If your data isn't strong enough, we can use sanitized or public datasets for the prototype, or focus on a roadmap with clear steps to improve data maturity. Either way, you'll leave with a strategy tailored to your actual situation."
+      answer: "It's a 6-week remote consulting program where we: assess your company's AI readiness, identify and prioritize the best AI opportunities for ROI, build a working prototype (proof-of-concept) using your data, and deliver a 12-month executive roadmap for implementation. By the end, you'll have clarity, a prototype you can show, and a plan you can act on."
     },
     {
       question: "How much does it cost?",
       answer: "The Sprint is a fixed investment of $9,500 (one-time). No hidden costs. No upselling during the sprint. This covers all consulting, workshops, prototype work, and final deliverables."
     },
     {
-      question: "Is everything done remotely?",
-      answer: "Yes. The Sprint is 100% online, which makes it accessible to companies anywhere in the US or Singapore, more affordable (no travel or onsite fees), and easier for your team to participate (via Zoom, Slack, or your preferred tools)."
-    },
-    {
       question: "How much time will my team need to commit?",
-      answer: "We've designed the Sprint to minimize disruption. Typical involvement: Kickoff (90 min) with key executives, stakeholder interviews (30–45 min each) with 4–6 people, one workshop per week (60–90 min) for alignment and decisions, and final demo (60–90 min) with leadership. On average: your team spends 6–8 hours total across 4 weeks."
+      answer: "We've designed the Sprint to minimize disruption. Typical involvement: Kickoff (90 min) with key executives, stakeholder interviews (30–45 min each) with 4–6 people, one workshop per week (60–90 min) for alignment and decisions, and final demo (60–90 min) with leadership. On average: your team spends 8–10 hours total across 6 weeks."
     },
     {
-      question: "What if we want to build the full system after the Sprint?",
-      answer: "You'll already have a validated use case, a prototype, and a roadmap with costs and milestones. From there, you can build internally using your own developers or engage Unietal (our company) for implementation and scaling. The Sprint is designed to set you up for whichever path you choose."
+      question: "What if my company doesn't have good data?",
+      answer: "That's common! Part of Week 1 is a data readiness check. If your data isn't strong enough, we can use sanitized or public datasets for the prototype, or focus on a roadmap with clear steps to improve data maturity. Either way, you'll leave with a strategy tailored to your actual situation."
     },
     {
-      question: "How is this different from hiring a generic consultant?",
-      answer: "Run by a PhD in AI & CTO, not generalist consultants. You don't just get slides — you get a working prototype. Fixed timeline (4 weeks) → fast results, no endless workshops. Affordable for SMBs, but with enterprise-level outputs."
-    },
-    {
-      question: "What industries do you work with?",
-      answer: "We've worked across technology, finance, retail, manufacturing, healthcare, and professional services. The Sprint framework is industry-agnostic — we focus on your business KPIs and tailor AI opportunities accordingly."
-    },
-    {
-      question: "What happens after I book?",
-      answer: "You complete a short intake form, we schedule the Kickoff session within 7 days, you meet your Sprint team and we start the 4-week process. At the end, you get your deliverables, prototype, and roadmap."
+      question: "What happens after the Sprint?",
+      answer: "You'll have a validated use case, working prototype, and roadmap with costs and milestones. From there, you can build internally using your own developers or work with us for full implementation. The choice is entirely yours — there's no obligation."
     }
   ]
 
@@ -112,8 +84,8 @@ export default function FAQ() {
                   </div>
                 </button>
                 
-                <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  openIndex === index ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}>
                   <div className="px-4 pb-4">
                     <div className="bg-gradient-to-r from-primary-50/50 to-secondary-50/50 rounded-lg p-3 border-l-3 border-primary-500">
