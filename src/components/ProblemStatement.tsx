@@ -1,6 +1,8 @@
 'use client'
 
+// McKinsey-inspired Situation-Complication-Resolution Framework
 export default function ProblemStatement() {
+  // Situation: Current state of AI adoption
   const painPoints = [
     {
       iconSvg: (
@@ -68,14 +70,14 @@ export default function ProblemStatement() {
             <span className="text-sm font-medium text-red-700">Common AI Implementation Challenges</span>
           </div>
           
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
+          <h2 className="font-display text-5xl md:text-7xl font-bold mb-8 leading-tight">
             <span className="text-neural-900">Why </span>
             <span className="gradient-text">AI Investments Fail</span>
           </h2>
           <div className="section-divider"></div>
-          
+
           <p className="text-xl md:text-2xl text-neural-600 leading-relaxed font-light max-w-4xl mx-auto">
-            87% of AI projects fail to deliver measurable ROI. Without a proven framework, 
+            <span className="font-bold gradient-text-accent">87% of AI projects fail</span> to deliver measurable ROI. Without a proven framework,
             businesses waste time and money on the wrong opportunities:
           </p>
         </div>
@@ -106,24 +108,30 @@ export default function ProblemStatement() {
           ))}
         </div>
 
-        {/* Solution Tease */}
+        {/* Resolution Tease - McKinsey Framework */}
         <div className="text-center">
-          <div className="relative max-w-4xl mx-auto">
+          <div className="relative max-w-5xl mx-auto">
             <div className="neural-glow">
-              <div className="card-neural p-12 text-center">
-                <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center shadow-glow">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="card-neural p-16 text-center">
+                <div className="flex justify-center mb-8">
+                  <div className="w-20 h-20 bg-gradient-to-br from-primary-600 to-secondary-600 rounded-2xl flex items-center justify-center shadow-glow">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold text-neural-900 mb-4">
+                <h3 className="font-display text-3xl md:text-5xl font-bold text-neural-900 mb-6 leading-tight">
                   AI investments shouldn&apos;t be risky.
                 </h3>
-                <p className="text-xl text-neural-700 font-light leading-relaxed">
-                  They should deliver <span className="gradient-text font-semibold">validated, measurable ROI</span>.
+                <p className="text-xl md:text-2xl text-neural-700 font-light leading-relaxed mb-8">
+                  They should deliver <span className="gradient-text-accent">validated, measurable ROI</span>.
                 </p>
+                <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-accent-500/10 to-primary-500/10 border border-accent-200/30 rounded-full">
+                  <svg className="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm font-bold text-accent-700">That&apos;s where our proven framework comes in</span>
+                </div>
               </div>
             </div>
           </div>

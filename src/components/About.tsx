@@ -97,18 +97,19 @@ export default function About() {
 
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
-            {/* Profile Image & Stats */}
+            {/* Professional Images Showcase */}
             <div className="order-2 lg:order-1">
+              {/* Main Profile Image */}
               <div className="relative mb-8">
-                <div className="aspect-square bg-gradient-to-br from-primary-50 to-accent-50 rounded-3xl flex items-center justify-center p-16 border-2 border-primary-100/50 shadow-premium relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-secondary-500/5"></div>
+                <div className="aspect-[4/5] bg-gradient-to-br from-primary-50/50 to-accent-50/50 rounded-3xl overflow-hidden border-2 border-primary-100/50 shadow-premium relative">
                   <Image 
-                    src="/images/AI_Logo.png" 
-                    alt="AI Integration Sprint Leader" 
-                    width={300}
-                    height={300}
-                    className="w-full h-full object-contain relative z-10"
+                    src="/images/consultant/mosa-2.png" 
+                    alt="Mosa Alsawadi - AI Integration Sprint Leader" 
+                    width={400}
+                    height={500}
+                    className="w-full h-full object-cover object-center"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
                 </div>
                 
                 {/* Floating Stats */}
@@ -123,13 +124,48 @@ export default function About() {
                 </div>
               </div>
 
+              {/* Authority Images Grid */}
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="relative group">
+                  <div className="aspect-square bg-white rounded-2xl overflow-hidden shadow-neural group-hover:shadow-glow transition-all duration-300 border-2 border-primary-100/30">
+                    <Image 
+                      src="/images/consultant/mosa-1.png" 
+                      alt="Mosa giving university lecture" 
+                      width={200}
+                      height={200}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
+                    <p className="text-xs font-semibold text-neural-800">University Lecture</p>
+                    <p className="text-xs text-neural-600">AI Research & Education</p>
+                  </div>
+                </div>
+                
+                <div className="relative group">
+                  <div className="aspect-square bg-white rounded-2xl overflow-hidden shadow-neural group-hover:shadow-glow transition-all duration-300 border-2 border-primary-100/30">
+                    <Image 
+                      src="/images/consultant/mosa-3.png" 
+                      alt="Mosa in startup workshop session" 
+                      width={200}
+                      height={200}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
+                    <p className="text-xs font-semibold text-neural-800">Strategy Workshop</p>
+                    <p className="text-xs text-neural-600">Business Transformation</p>
+                  </div>
+                </div>
+              </div>
+
               {/* Quick Stats */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/80 backdrop-blur-md border border-primary-100/50 rounded-2xl p-6 text-center shadow-neural hover:shadow-glow transition-all duration-300">
+                <div className="bg-white/90 backdrop-blur-md border border-primary-100/50 rounded-2xl p-6 text-center shadow-neural hover:shadow-glow transition-all duration-300">
                   <div className="text-3xl font-bold gradient-text mb-2">100+</div>
                   <div className="text-sm text-neural-600">Businesses Guided</div>
                 </div>
-                <div className="bg-white/80 backdrop-blur-md border border-primary-100/50 rounded-2xl p-6 text-center shadow-neural hover:shadow-glow transition-all duration-300">
+                <div className="bg-white/90 backdrop-blur-md border border-primary-100/50 rounded-2xl p-6 text-center shadow-neural hover:shadow-glow transition-all duration-300">
                   <div className="text-3xl font-bold gradient-text mb-2">10+</div>
                   <div className="text-sm text-neural-600">Years in AI</div>
                 </div>
@@ -140,14 +176,14 @@ export default function About() {
             <div className="order-1 lg:order-2">
               <div className="mb-10">
                 <h3 className="text-4xl font-bold text-neural-900 mb-6">
-                  Dr. [Your Name]
+                  Mosa Alsawadi
                 </h3>
                 <div className="text-xl text-neural-600 leading-relaxed mb-8 font-light">
                   <p className="mb-4">
-                    I&apos;m a <span className="font-semibold gradient-text">PhD in Artificial Intelligence</span> and <span className="font-semibold gradient-text">Co-Founder & CTO</span> of MessengerCo.
+                    I&apos;m a <span className="font-semibold gradient-text">PhD in Artificial Intelligence</span> and <span className="font-semibold gradient-text">Co-Founder & CTO</span> of MessengerCo, with over a decade of experience transforming businesses through AI.
                   </p>
                   <p>
-                    I&apos;ve spent over a decade building advanced AI systems and guiding digital transformations. Now, through Unietal, I help SMEs cut through the AI hype and <span className="font-semibold gradient-text">implement solutions that generate real, measurable ROI</span>.
+                    Through Unietal Consulting, I help SMEs cut through the AI hype and <span className="font-semibold gradient-text">implement solutions that generate real, measurable ROI</span>. My unique combination of academic research, technical leadership, and hands-on business transformation experience ensures your AI investments deliver proven results.
                   </p>
                 </div>
               </div>
@@ -255,7 +291,7 @@ export default function About() {
                 
                 <footer className="text-center">
                   <div className="text-xl font-bold mb-2 text-white">
-                    Dr. [Your Name]
+                    Mosa Alsawadi
                   </div>
                   <div className="text-blue-200">
                     AI Integration Sprint Leader

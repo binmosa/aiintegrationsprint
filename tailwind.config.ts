@@ -70,14 +70,16 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Sora', 'Inter', 'system-ui', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         '3xl': '0 35px 60px -12px rgba(0, 0, 0, 0.25)',
-        'glow': '0 0 20px -5px rgba(8, 174, 224, 0.5)',
-        'glow-lg': '0 0 40px -10px rgba(8, 174, 224, 0.6)',
-        'neural': '0 4px 20px -2px rgba(8, 174, 224, 0.3)',
-        'premium': '0 25px 50px -12px rgba(8, 174, 224, 0.25), 0 0 0 1px rgba(8, 174, 224, 0.05)',
+        'glow': '0 0 25px -5px rgba(8, 174, 224, 0.6), 0 0 15px -5px rgba(34, 201, 244, 0.4)',
+        'glow-lg': '0 0 50px -10px rgba(8, 174, 224, 0.7), 0 0 30px -10px rgba(34, 201, 244, 0.5)',
+        'neural': '0 8px 30px -5px rgba(8, 174, 224, 0.35), 0 0 0 1px rgba(8, 174, 224, 0.08)',
+        'premium': '0 30px 60px -15px rgba(8, 174, 224, 0.3), 0 10px 30px -10px rgba(34, 201, 244, 0.2), 0 0 0 1px rgba(8, 174, 224, 0.08)',
+        'luxury': '0 40px 80px -20px rgba(8, 174, 224, 0.35), 0 20px 40px -15px rgba(34, 201, 244, 0.25), 0 0 0 1px rgba(8, 174, 224, 0.1)',
       },
       animation: {
         'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
